@@ -25,6 +25,7 @@ mba.surf() function from the “MBA” package.<br>
 Weinan Li
 
 Xiamen University
+Email: lwnzjou@163.com
 
 ## :arrow_double_down: Installation
 
