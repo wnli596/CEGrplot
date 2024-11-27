@@ -83,7 +83,7 @@ ceg_station_plot <- function(data,
             text = element_text(family = family))
   } else if(brief == TRUE){
     #加载地图数据
-    world_shp <-rnaturalearth::ne_countries(scale = "medium", returnclass = "sf")
+    world_shp <-rnaturalearth::ne_countries(scale = "large", returnclass = "sf")
     p <- ggplot() +
       geom_sf(data = world_shp, fill = 'grey', col = 'black', size = 0.1) +
       coord_sf(xlim = c(lon_min, lon_max), ylim = c(lat_min, lat_max), expand = FALSE) +
