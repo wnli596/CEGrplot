@@ -37,12 +37,13 @@ under: **<span style="color:red;">datafile</span>**
 ``` r
 # install.packages("remotes")
 remotes::install_github("wnli596/CEGrplot")
+ncfile <- system.file('data/ETOPO1_15second.nc', package='CEGrplot')
+datafile <- system.file('data', package='CEGrplot')
+datafile
 ```
 
 ``` r
 #Test
-ncfile <- system.file('data/ETOPO1_15second.nc', package='CEGrplot')
-datafile <- system.file('data', package='CEGrplot')
 if(ncfile == ""){
     print("Please download the ETOPO1_15second.nc dataset from the following DOI link: https://doi.org/10.5281/zenodo.14223594, and then place the data under: ", datafile)
 } else {
